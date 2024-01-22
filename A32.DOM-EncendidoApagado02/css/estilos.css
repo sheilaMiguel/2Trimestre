@@ -1,0 +1,9 @@
+ /* Definición de clases en tu hoja de estilo CSS */
+.claro{background-color: white; 
+    color: black;
+     text-align: center;
+     font-size: 40px;
+    }
+    
+.oscuro{background-color: black; 
+    color: white;}
