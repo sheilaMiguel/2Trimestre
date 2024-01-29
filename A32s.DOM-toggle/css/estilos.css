@@ -1,0 +1,30 @@
+ /* Definición de clases en tu hoja de estilo CSS */
+#miDiv{
+  
+    background-color: rgb(159, 231, 207); 
+    width: 30px;
+    height: 30px;
+    border: 1px solid blue;
+   
+}
+
+h4{
+    cursor: pointer;
+}
+
+.resaltado{
+    color: red;
+    font-weight: bold;
+}
+
+.adiosVisibilidad{
+    display: none; /* lo quita recolocando*/
+   /* visibility: hidden; lo quita pero deja el hueco*/
+}
+
+button{
+    background-color: rgb(247, 223, 146);
+}
+button:hover{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
