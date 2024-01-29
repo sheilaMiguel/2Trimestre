@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<title>Formulario</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<link rel="shortcut icon" href="img/favicon.ico" />
+ 
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	
+		<script> 
+		window.onload=function(){
+
+/*Cogemos datos*/
+let defColor=localStorage.getItem("color");
+let defTamaño = localStorage.getItem("tamaño");
+let defTipog = localStorage.getItem("tipografia");
+
+document.getElementById("color").value = defColor;
+document.getElementById("tamaño").value = defTamaño;
+document.forms[0].tipografia.value = defTipog;
+
+guardarPreferencias();
+
+}
+
+function guardarPreferencias(){
+let color = document.getElementById("color").value;
+let tamaño = document.getElementById("tamaño").value;
+let tipografia = document.forms[0].tipografia.value;
+
+document.getElementById("titulo").style.color = color;
+document.getElementById("parrafo").style.color = color;
+
+document.getElementById("titulo").style.fontSize = tamaño + "px";
+document.getElementById("parrafo").style.fontSize = tamaño  + "px";
+
+document.getElementById("titulo").style.fontFamily = tipografia;
+document.getElementById("parrafo").style.fontFamily = tipografia;
+
+localStorage.setItem("color", color);
+localStorage.setItem("tamaño", tamaño);
+localStorage.setItem("tipografia", tipografia);
+}
+
+</script>
+	</head>
+
+
+	<body>
+ 
+		<div class="contenedor">
+			<div class="cabecera">
+               <form action="#" method="POST" class="form">
+
+		          <label for="color">Color de Fuente</label>
+		          <input id="color" type="color"/>
+
+		          <label for="tamaño">Tamaño de Fuente</label>
+		          <input id="tamaño" type="number"/>
+
+		          <label for="tipografia">Tipografía</label>
+		          <select name="tipografia" id="tipografia">
+					<option value="Cambria">Cambria</option>
+					<option value="Arial">Arial</option>
+					<option value="Roboto">Roboto</option>
+				  </select>
+
+				  <br/>
+				  
+		           <input class="button" onclick="guardarPreferencias()" type="button" value="Guardar Peferencias"/>
+			   </form>
+			</div>
+
+
+			<div class="texto">
+				<h1 id="titulo">Titulo Web</h1>
+				<p id="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perspiciatis necessitatibus, molestiae, numquam molestias ab voluptatem, dolorem accusamus quae eos alias vel debitis quibusdam fuga amet cum quod beatae. <br/>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, voluptas alias consectetur incidunt deserunt non labore harum, facilis vel porro voluptatibus asperiores sapiente facere quos magni fuga tenetur provident voluptates.
+				</p>
+			</div>
+		</div>
+		
+	</body>
+	</html>

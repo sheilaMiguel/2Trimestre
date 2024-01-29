@@ -1,0 +1,41 @@
+.contenedor{
+	width: 700px;
+	height: auto;
+	margin:0px auto;
+}
+
+.cabecera{
+	width:700px;
+	height: 90px;
+	border: 1px solid black;
+	margin-top: 30px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.button{
+	margin:13px;
+	margin-left:250;
+}
+
+.texto{
+	width:700px;
+	height: 400px;
+	max-height: auto;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+}
+
+.texto h1{
+	align-self: center;
+	margin-top: 17px;
+}
+
+.texto p{
+	margin: 15px;
+}
+
+

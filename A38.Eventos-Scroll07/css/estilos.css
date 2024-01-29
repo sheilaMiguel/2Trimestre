@@ -1,0 +1,23 @@
+ /* Definición de clases en tu hoja de estilo CSS */
+ button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+div {
+  padding: 20px;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+
+p {
+  cursor: pointer;
+  color: blue;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
