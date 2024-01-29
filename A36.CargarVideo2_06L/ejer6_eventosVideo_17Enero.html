@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar DOM</title>
+
+    <style>
+
+
+    </style>
+
+    
+    <script type="text/javascript">
+       
+    //Capturar un evento para cuando se cargue el vídeo.
+
+    /*Enlace para descargar el vídeo:
+                    https://archive.org/details/movies*/
+
+    document.addEventListener("DOMContentLoaded", carga)
+
+    function carga(){
+        console.log("Se ha cargado el DOM, aunque el vídeo no")
+    }
+
+    window.onload=()=>console.log("Ahora se ha cargado el vídeo")
+
+    </script>
+   
+</head>
+
+
+
+<body>
+
+    <h1>Evento de Carga</h1>
+    
+    <video src="https://archive.org/download/KamenRiderDecadeAllRidersVs.DaiShocker/Kamen%20Rider%20Decade%20All%20Riders%20Vs.%20Dai%20Shocker.mp4" width="400" height="300" autoplay></video>
+
+</body>
+
+
+
+</html>
+
+
+
