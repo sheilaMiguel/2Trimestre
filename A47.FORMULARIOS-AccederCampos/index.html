@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>EVENTOS FORMULARIOS</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+		<link rel="shortcut icon" href="img/favii.png" />
+		<script type="text/javascript" src="js/javascript.js"> </script>
+
+
+	</head>
+	<body >
+	
+		<form id="miFormulario">
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre"><br><br>
+	
+
+			<label for="miCheck">Selecciona:</label>
+			<input type="checkbox" id="miCheck" name="miCheck"><br><br>
+
+
+			<label for="checkOpcion1">check1:</label>
+			<input type="checkbox" id="checkOpcion1" name="opciones" value="check1">
+			<label for="checkOpcion2">check2:</label>
+			<input type="checkbox" id="checkOpcion2" name="opciones" value="check2"><br><br>
+	
+
+			<label for="miRadio1">Opción 1:</label>
+			<input type="radio" id="miRadio1" name="miRadio" value="opcion1">
+			<label for="miRadio2">Opción 2:</label>
+			<input type="radio" id="miRadio2" name="miRadio" value="opcion2"><br><br>
+	
+
+			<label for="miSelect">Selecciona una opción:</label>
+			<select id="miSelect" name="miSelect">
+				<option value="A">Opción 1</option>
+				<option value="B">Opción 2</option>
+				<option value="C">Opción 3</option>
+			</select><br><br>
+
+			<label for="sele">Selecciona una A:</label>
+			<select id="sele" name="sele">
+				<option value="1">Opción a1</option>
+				<option value="2">Opción a2</option>
+				<option value="3">Opción a3</option>
+			</select><br><br>
+	
+			<button type="button" onclick="leerFormulario()">Leer Formulario</button>
+		</form>
+	
+	</body>
+
+</html>
