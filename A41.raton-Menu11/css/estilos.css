@@ -1,0 +1,21 @@
+
+
+p{
+  cursor: pointer;
+}
+
+#menu{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+  background-color: gray;
+  width: 150px;
+  border: 1px solid white;
+}
+
+#menu p{
+  border-bottom: 1px solid white;
+  color: white;
+  padding: 5px;
+}
