@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>EVENTOS FORMULARIOS</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+		<link rel="shortcut icon" href="img/favii.png" />
+		<script type="text/javascript" src="js/javascript.js"> </script>
+
+
+	</head>
+	<body >
+	
+		<form id="miFormulario" novalidate autocomplete="on">
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" required><br><br>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required><br><br>
+
+			<label for="tel">Telefono:</label>
+			<input type="tel" id="tel" name="tel" pattern="[6][0-9]{8}"><br><br>
+			<!-- PATTERN
+				[6] empiece por (6) [6,8] empiece por 6 u 8 [6-8] num del 6-8
+				[0-9] le siga un num del 0-9
+				{8} y que sean 8 num
+			-->
+
+			<label for="paises">Paises:</label>
+			<select id="paises" name="paises">
+				<option value="0">Seleccione pais</option>
+				<option value="1">España</option>
+				<option value="2">Portugal</option>
+				<option value="3">Andorra</option>
+			</select><br><br>
+
+			<label for="frutas">Selecciona tus frutas favoritas: SELECT MULTIPLE</label>
+			<select id="frutas" name="frutas" multiple>
+				<option value="manzana">Manzana</option>
+				<option value="banana">Banana</option>
+				<option value="uva">Uva</option>
+				<option value="naranja">Naranja</option>
+			</select><br><br>
+			
+			<label for="socio">¿Socio?</label>
+			<input type="checkbox" id="socio" name="socio"><br><br>
+	
+			<input type="submit">
+		</form>
+	
+		<div id="texto"></div>
+	</body>
+
+</html>
