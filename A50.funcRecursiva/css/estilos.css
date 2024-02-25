@@ -1,0 +1,20 @@
+
+
+
+div{
+    display: table;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    width: 500px;
+}
+
+p{
+    display: table-row;
+    border: 1px solid black; 
+}
+span{
+    display: table-cell;
+    border: 1px solid black;
+    padding: 10px;
+}
