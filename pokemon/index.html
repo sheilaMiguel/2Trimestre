@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Pokemons</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+		<link rel="shortcut icon" href="img/favii.png" />
+		<script type="text/javascript" src="js/javascript.js"> </script>
+
+
+	</head>
+	<body >
+	
+		<h1>Lista de Pokémons</h1>
+		<input type="text" id="name-filter" oninput="filterPokemonByName()" placeholder="Filtrar por nombre">
+		<div id="pokemon-list"></div>
+		<div id="loading-message">Cargando más Pokémon...</div>
+		
+		    <!-- Detalle ampliado -->
+			<div id="pokemon-detail">
+				<div id="detail-container">
+					<img id="detail-image" alt="Detalle Pokémon">
+					<h2 id="detail-name"></h2>
+					<p id="detail-abilities"></p>
+				</div>
+			</div>
+		
+	</body>
+
+</html>
